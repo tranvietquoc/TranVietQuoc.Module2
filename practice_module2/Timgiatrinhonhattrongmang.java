@@ -1,4 +1,4 @@
-package thuchanh;
+package practice_module2;
 
 public class Timgiatrinhonhattrongmang {
     public static void main(String[] args) {

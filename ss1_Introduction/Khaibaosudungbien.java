@@ -1,3 +1,5 @@
+package ss1_Introduction;
+
 public class Khaibaosudungbien {
     public static void main(String[] args) {
         int i = 10;

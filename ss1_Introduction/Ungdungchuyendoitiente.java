@@ -1,3 +1,5 @@
+package ss1_Introduction;
+
 import java.util.Scanner;
 
 public class Ungdungchuyendoitiente {

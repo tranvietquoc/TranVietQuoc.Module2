@@ -1,4 +1,4 @@
-package Vonglap;
+package ss2_loop;
 
 public class Hienthi20songuyento {
     public static void main(String[] args) {

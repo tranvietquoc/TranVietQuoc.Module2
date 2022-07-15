@@ -1,4 +1,4 @@
-package thuchanh;
+package practice_module2;
 
 import java.util.Scanner;
 

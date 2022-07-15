@@ -1,3 +1,5 @@
+package ss1_Introduction;
+
 import java.util.Date;
 
 public class Hienthithoigian {
