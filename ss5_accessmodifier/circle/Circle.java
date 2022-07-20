@@ -1,4 +1,4 @@
-package ss5_accessmodifier;
+package ss5_accessmodifier.circle;
 
 public class Circle {
     private double radius = 1.0;

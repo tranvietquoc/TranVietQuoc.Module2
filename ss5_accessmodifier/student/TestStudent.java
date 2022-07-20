@@ -1,6 +1,6 @@
-package ss5_accessmodifier;
+package ss5_accessmodifier.student;
 
-import java.util.Scanner;
+import ss5_accessmodifier.student.Student;
 
 public class TestStudent {
     public static void main(String[] args) {

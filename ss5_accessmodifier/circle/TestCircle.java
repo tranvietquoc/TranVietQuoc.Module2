@@ -1,4 +1,6 @@
-package ss5_accessmodifier;
+package ss5_accessmodifier.circle;
+
+import ss5_accessmodifier.circle.Circle;
 
 public class TestCircle {
     public static void main(String[] args) {
