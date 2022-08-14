@@ -1,4 +1,6 @@
-package ss10_generic_stack_queue.codegym;
+package ss10_generic_stack_queue.codegym.queue;
+
+import ss10_generic_stack_queue.codegym.Node;
 
 public class MyLinkedListQueue {
     private Node head;

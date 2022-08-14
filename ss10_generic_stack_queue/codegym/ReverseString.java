@@ -1,5 +1,7 @@
 package ss10_generic_stack_queue.codegym;
 
+import ss10_generic_stack_queue.codegym.stack.MyStack;
+
 public class ReverseString {
     public static void StackOfString () {
         MyStack<String> stack = new MyStack<>();

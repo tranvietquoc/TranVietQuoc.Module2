@@ -1,5 +1,7 @@
 package ss10_generic_stack_queue.codegym;
 
+import ss10_generic_stack_queue.codegym.stack.MyGenericStack;
+
 public class GenericStackClient {
     private static void stackOfIStrings() {
         MyGenericStack<String> stack = new MyGenericStack<String>();

@@ -1,4 +1,4 @@
-package ss10_generic_stack_queue.codegym;
+package ss10_generic_stack_queue.codegym.stack;
 
 import java.util.EmptyStackException;
 import java.util.LinkedList;

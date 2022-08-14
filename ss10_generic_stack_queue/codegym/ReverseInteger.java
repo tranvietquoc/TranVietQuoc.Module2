@@ -1,5 +1,7 @@
 package ss10_generic_stack_queue.codegym;
 
+import ss10_generic_stack_queue.codegym.stack.MyStack;
+
 public class ReverseInteger {
     public static void StackOfInterger() {
         MyStack<Integer> stack = new MyStack<>();

@@ -1,6 +1,6 @@
 package ss10_generic_stack_queue.codegym;
 
-class Node {
+public class Node {
     public int key;
     public Node next;
 
