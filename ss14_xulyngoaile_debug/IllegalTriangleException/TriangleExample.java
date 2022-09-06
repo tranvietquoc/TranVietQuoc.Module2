@@ -1,4 +1,4 @@
-package ss14_xulyngoaile_debug;
+package ss14_xulyngoaile_debug.IllegalTriangleException;
 
 import java.util.Scanner;
 
