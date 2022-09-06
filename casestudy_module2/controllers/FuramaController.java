@@ -1,5 +1,10 @@
 package casestudy_module2.controllers;
 
+import casestudy_module2.models.Employee;
+import casestudy_module2.services.Impl.CustomerServiceImpl;
+import casestudy_module2.services.Impl.EmployeeServiceImpl;
+import casestudy_module2.services.Impl.FacilityServiceIplm;
+
 import java.util.Scanner;
 
 public class FuramaController {
@@ -38,21 +43,35 @@ public class FuramaController {
     }
 
     public static void displayEmployeeMenu() {
+        EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
         boolean check = true;
         while (check) {
             System.out.println("1. Display list employees");
-            System.out.println("2. App new employees");
+            System.out.println("2. Add new employees");
             System.out.println("3. Edit employees");
             System.out.println("4. Return main menu");
             Scanner scanner = new Scanner(System.in);
             switch (scanner.nextInt()) {
                 case 1: {
+                    employeeService.display();
+                    break;
+                }
+                case 2: {
+                    employeeService.addNew();
+                    break;
+                }
+                case 3: {
+
+                }
+                case 4: {
+                    displayMainMenu();
                 }
             }
 
         }
     }
     public static void displayCustomer() {
+        CustomerServiceImpl customerService = new CustomerServiceImpl();
         boolean check = true;
         while (check) {
             System.out.println("1.Display list customers ");
@@ -62,7 +81,12 @@ public class FuramaController {
             Scanner scanner = new Scanner(System.in);
             switch (scanner.nextInt()) {
                 case 1: {
+                    customerService.display();
                 }
+                case 2: {
+                    customerService.addNew();
+                }
+                case 3:
             }
         }
     }
@@ -81,18 +105,54 @@ public class FuramaController {
         }
     }
     public static void displayFacility() {
+        FacilityServiceIplm facilityServiceIplm = new FacilityServiceIplm();
         boolean check = true;
         while (check) {
             System.out.println("1.Display list facility ");
             System.out.println("2.Add new facility ");
             System.out.println("3.Display list facility maintenance ");
             System.out.println("4.Return main menu ");
-            System.out.println("5. Edit contracts");
-            System.out.println("6. Return main menu");
+            System.out.println("5.Edit contracts");
+            System.out.println("6.Return main menu");
             Scanner scanner = new Scanner(System.in);
             switch (scanner.nextInt()) {
                 case 1: {
+                    facilityServiceIplm.display();
                 }
+                case 2: {
+                    addNewFacility();
+                }
+            }
+        }
+    }
+    public static void addNewFacility() {
+        FacilityServiceIplm facilityServiceIplm = new FacilityServiceIplm();
+        boolean check = true;
+        while (check) {
+            System.out.println("1.Add new Villa ");
+            System.out.println("2.Add new House ");
+            System.out.println("3.Add new Room ");
+            System.out.println("4.Back to menu");
+            Scanner scanner = new Scanner(System.in);
+            switch (scanner.nextInt()) {
+                case 1: {
+                    facilityServiceIplm.addNewVilla();
+                    displayFacility();
+                    break;
+                }
+                case 2: {
+                    facilityServiceIplm.addNewHouse();
+                    displayFacility();
+                    break;
+                }
+                case 3: {
+                    facilityServiceIplm.addNewRoom();
+                    displayFacility();
+                    break;
+                }
+                case 4:
+                    displayFacility();
+                    break;
             }
         }
     }

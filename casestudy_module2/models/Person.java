@@ -1,12 +1,20 @@
 package casestudy_module2.models;
 
 public abstract class Person {
-    private int id;
-    private String name;
-    private int age;
-    private String address;
+    private int id;           //Mã khách hàng
+    private String name;      //Tên
+    private int age;          //Tuổi
+    private String address;   //Địa chỉ
 
-    public Person (){
+
+    public Person() {
+    }
+
+    public Person(int id, String name, int age, String address) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.address = address;
     }
 
     public int getId() {
@@ -39,5 +47,15 @@ public abstract class Person {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "Id: " + id +
+                ", Tên: " + name + '\'' +
+                ", Tuổi: " + age +
+                ", Địa chỉ: " + address + '\'' +
+                '}';
     }
 }

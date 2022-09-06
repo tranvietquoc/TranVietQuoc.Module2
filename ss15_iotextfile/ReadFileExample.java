@@ -38,7 +38,7 @@ public class ReadFileExample {
         Scanner scanner = new Scanner(System.in);
         String path = scanner.nextLine();
 
-        ReadFileExample readFileEx = new ReadFileExample();
-        readFileEx.readFileText(path);
+        ReadFileExample readfileEx = new ReadFileExample();
+        readfileEx.readFileText(path);
     }
 }
